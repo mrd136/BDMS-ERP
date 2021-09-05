@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+      <!-- Copyright (c) 2018-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+      <!-- See LICENSE file for full copyright and licensing details. -->
+      <template id="website_buy_now_button" inherit_id="website_sale.product_buy_now">
+        <xpath expr="//a[@id='buy_now']" position="replace">
+          <input type="hidden" name="buy_now" value="" />
+          <a class="btn btn-lg mt16 btn-danger" id="product_buy_now" href="#"><span class="fa fa-shopping-bag" /> Buy Now</a>
+        </xpath>
+      </template>
+
+      <template id="assets_frontend_first" inherit_id="website.assets_frontend" name="Shop">
+        <xpath expr="." position="inside">
+          <script type="text/javascript" src="/website_buy_now/static/src/js/main.js"/>
+        </xpath>
+      </template>
+
+      <template id="website_buy_error_cart" inherit_id="website_sale.cart">
+        <xpath expr="//div[@t-if='abandoned_proceed or access_token']" position="before">
+          <div style="display:none;" id="cart-error">
+            <div class="alert alert-danger" >
+              <span>Something goes wrong with your Buy Now product, please check</span>
+            </div>
+          </div>
+        </xpath>
+      </template>
+
+    <template id="webkul_buy_now_product" inherit_id="website_sale.cart_summary">
+      <xpath expr="//table[@id='cart_products']/tbody/tr/td[hasclass('td-img')]" position="inside">
+        <t t-set="wk_render_input" t-value="request.session.get('product_for_later') if request.website.is_public_user() else request.env['res.users'].browse(request._uid).partner_id.save_user_cart_data" />
+        <t t-if="wk_render_input and len(website_sale_order.website_order_line.ids)==1" >
+          <input type="hidden" id="wk_intg_products" name="wk_products" t-att-value="line.product_id.id"/>
+          <input type="hidden" id="wk_intg_qty" name="wk_qty" t-att-value="line.product_uom_qty" />
+        </t>
+      </xpath>
+    </template>
+
+    <template id="wk_products_buy_now" inherit_id="website_sale.products_item" active="True" customize_show="True" name="Buy Now Button">
+      <xpath expr="//div[hasclass('o_wsale_product_btn')]" position="inside">
+        <t t-if="len(product.product_variant_ids) == 1">
+          <input name="product_id" id="wk_bn_id" t-att-value="product.product_variant_id.id" type="hidden" />
+          <a role="button" id="product_buy_now_cart_logo" class="btn btn-danger">
+            <span class="fa fa-shopping-bag" />
+          </a>
+        </t>
+        <t t-if="len(product.product_variant_ids) &gt; 1">
+          <a role="button" class="btn btn-danger" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
+            <span class="fa fa-shopping-bag" />
+          </a>
+        </t>
+      </xpath>
+    </template>
+
+
+    </data>
+</odoo>
