@@ -2,44 +2,7 @@
 <odoo>
     <template id="boec_header" inherit_id="website.layout" name="Boec Header" active="False">
         <xpath expr="//header//nav" position="replace">
-            <section class="top_nav">
-                <div class="wrapper">
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-12 ">
-                                <p class="free">
-                                    Free shipping, 30-day return or refund guarantee.
-                                </p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="left">
-                                    <div class="sign_in">
-                                        <!-- Sign In -->
-                                        <t t-call="portal.placeholder_user_sign_in">
-                                            <t t-set="_item_class" t-value="'nav-item ml-lg-auto'"/>
-                                            <t t-set="_link_class" t-value="'nav-link'"/>
-                                        </t>
-                                        <!-- User Dropdown -->
-                                        <t t-call="portal.user_dropdown">
-                                            <t t-set="_user_name" t-value="True"/>
-                                            <t t-set="_item_class" t-value="'nav-item dropdown ml-lg-auto'"/>
-                                            <t t-set="_link_class" t-value="'nav-link'"/>
-                                        </t>
-                                    </div>
-                                    <div class="sign_in">
-                                        <a href="#">FAQS</a>
-                                    </div>
-                                    <div class="currency">
-                                        <t t-call="website_sale.pricelist_list">
-                                            <t t-set="_classes" t-valuef="ml-2"/>
-                                        </t>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <!-- navbar  -->
             <section class="navigation ">
                 <div class="container ms">
