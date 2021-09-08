@@ -38,7 +38,7 @@ odoo.define('website_buy_now.main', function (require) {
 
     function loadPage(){
       var path = window.location.pathname;
-      var paths = ['/shop/checkout','/shop/payment','/shop/confirmation','/shop/cart','/shop/address']
+      var paths = ['/shop/checkout','/shop/payment','/shop/confirmation','/shop/cart','/shop/address', '/payment/process']
       if ((localStorage.getItem("buy_now") == 'true' && !paths.includes(path))|| (path == '/shop')){
         $('.my_cart_quantity ').hide();
         ajax_get_quantity();

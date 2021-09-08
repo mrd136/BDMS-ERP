@@ -15,9 +15,9 @@
 #################################################################################
 {
   "name"                 :  "Website Buy Now",
-  "summary"              :  "Odoo website Buy Now module adds a Buy Now button to the products on Odoo website so you buy the products in a single click.",
+  "summary"              :  """Odoo website Buy Now module adds a Buy Now button to the products on Odoo website so you buy the products in a single click.""",
   "category"             :  "Website",
-  "version"              :  "1.0.3",
+  "version"              :  "1.0.7",
   "author"               :  "Webkul Software Pvt. Ltd.",
   "license"              :  "Other proprietary",
   "website"              :  "https://store.webkul.com/Odoo-Website-Buy-Now.html",
@@ -40,8 +40,7 @@
                             Order again""",
   "live_test_url"        :  "http://odoodemo.webkul.com/?module=website_buy_now",
   "depends"              :  [
-                             'website_sale',
-                             'sale',
+                             'website_sale_delivery',
                             ],
   "data"                 :  [
                              'security/ir.model.access.csv',
@@ -52,6 +51,6 @@
   "installable"          :  True,
   "auto_install"         :  False,
   "price"                :  69,
-  "currency"             :  "EUR",
+  "currency"             :  "USD",
   "pre_init_hook"        :  "pre_init_check",
 }
