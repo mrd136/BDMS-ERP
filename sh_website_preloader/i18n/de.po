@@ -1,0 +1,226 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_website_preloader
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-10 06:43+0000\n"
+"PO-Revision-Date: 2020-10-10 06:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings__sh_back_color
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website__sh_back_color
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-beat
+msgid "Ball Beat"
+msgstr "Ball Schlag"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-clip-rotate
+msgid "Ball Clip Rotate"
+msgstr "Ball Clip drehen"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-clip-rotate-multiple
+msgid "Ball Clip Rotate Multiple"
+msgstr "Ball Clip drehen Mehrere"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-clip-rotate-pulse
+msgid "Ball Clip Rotate Pulse"
+msgstr "Ball Clip drehen Pulse"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-grid-beat
+msgid "Ball Grid Beat"
+msgstr "Ball-Grid-Schlag"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-grid-pulse
+msgid "Ball Grid Pulse"
+msgstr "Ball-Grid-Pulse"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-pulse
+msgid "Ball Pulse"
+msgstr "Ball Pulse"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-pulse-rise
+msgid "Ball Pulse Rise"
+msgstr "Ball Pulsanstieg"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-pulse-sync
+msgid "Ball Pulse Sync"
+msgstr "Ball Pulse Sync"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-rotate
+msgid "Ball Rotate"
+msgstr "Ball Rotate"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-scale
+msgid "Ball Scale"
+msgstr "Ball-Skala"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-scale-multiple
+msgid "Ball Scale Multiple"
+msgstr "Ball-Skala Multiple"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-scale-random
+msgid "Ball Scale Random"
+msgstr "Ball-Skala Zufall"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-scale-ripple
+msgid "Ball Scale Ripple"
+msgstr "Ball-Skala Ripple"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-scale-ripple-multiple
+msgid "Ball Scale Ripple Multiple"
+msgstr "Ball-Skala Ripple Multiple"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-spin-fade-loader
+msgid "Ball Spin Fade Loader"
+msgstr "Ball Spin Fade Loader"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-triangle-path
+msgid "Ball Triangle Path"
+msgstr "Ball-Dreieck-Pfad"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-zig-zag
+msgid "Ball Zig Zag"
+msgstr "Ball Zig Zag"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__ball-zig-zag-deflect
+msgid "Ball Zig Zag Deflect"
+msgstr "Ball Zig Zag Deflect"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,help:sh_website_preloader.field_res_config_settings__sh_back_color
+#: model:ir.model.fields,help:sh_website_preloader.field_website__sh_back_color
+msgid "Choose background color"
+msgstr "Wählen Sie Hintergrundfarbe"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,help:sh_website_preloader.field_res_config_settings__sh_progressbar_color
+#: model:ir.model.fields,help:sh_website_preloader.field_website__sh_progressbar_color
+msgid "Choose progressbar color"
+msgstr "Wählen Sie progressbar Farbe"
+
+#. module: sh_website_preloader
+#: model:ir.model,name:sh_website_preloader.model_res_config_settings
+msgid "Config Settings"
+msgstr "Config-Einstellungen"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__cube-transition
+msgid "Cube Transition"
+msgstr "Cube Transition"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__line-scale
+msgid "Line Scale"
+msgstr "Line-Skala"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__line-scale-party
+msgid "Line Scale Party"
+msgstr "Line-Skala-Partei"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__line-scale-pulse-out
+msgid "Line Scale Pulse Out"
+msgstr "Line-Skala Pulse Out"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__line-scale-pulse-out-rapid
+msgid "Line Scale Pulse Out Rapid"
+msgstr "Linie Skala Pulse Out Schnelle"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__line-spin-fade-loader
+msgid "Line Spin Fade Loader"
+msgstr "Linie Spin Fade Loader"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__pacman
+msgid "Pacman"
+msgstr "Pacman"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings__sh_progressbar_color
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website__sh_progressbar_color
+msgid "Progressbar Color"
+msgstr "Progressbar Farbe"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__semi-circle-spin
+msgid "Semi Circle Spin"
+msgstr "Halbkreis Spin"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__square-spin
+msgid "Square Spin"
+msgstr "Platz Spin"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings__sh_style
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website__sh_style
+msgid "Style"
+msgstr "Stil"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields.selection,name:sh_website_preloader.selection__website__sh_style__triangle-skew-spin
+msgid "Triangle Skew Spin"
+msgstr "Triangle Skew Spin"
+
+#. module: sh_website_preloader
+#: model:ir.model,name:sh_website_preloader.model_website
+msgid "Website"
+msgstr "Webseite"
+
+#. module: sh_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_res_config_settings__sh_is_website_preloader
+#: model:ir.model.fields,field_description:sh_website_preloader.field_website__sh_is_website_preloader
+#: model_terms:ir.ui.view,arch_db:sh_website_preloader.sh_website_preloader_res_config_settings_view_form_inherit
+msgid "Website Preloader"
+msgstr "Website Preloader"
