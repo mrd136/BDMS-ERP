@@ -157,31 +157,23 @@
         <t t-set="countries" t-value="env['res.country'].sudo().search([])"/>
         <form name="/shop/checkout" method="post" class="checkout_autoformat" id="BillingAddressForm">
             <div t-attf-class="form-group name col-lg-12 col-md-12 col-sm-12 col-12">
-                <label class="control-label" for="name"><span class="text-secondary">*</span> Complete name</label>
+                <label class="control-label" for="name"><span class="text-secondary">*</span> Nom Complet</label>
                 <input type="text" name="name" class="form-control" required="1" t-att-value="'name' in website_sale_order.partner_id and website_sale_order.partner_id['name'] != 'Public user' and website_sale_order.partner_id['name']"/>
             </div>
             <div t-attf-class="form-group col-lg-12 col-md-12 col-sm-6 col-12" id="email">
                 <label class="control-label" for="email"><span class="text-secondary">*</span> Email</label>
                 <input type="email" name="email" class="form-control" required="1" t-att-value="'email' in website_sale_order.partner_id and website_sale_order.partner_id['email']"/>
             </div>
-            <div t-attf-class="form-group col-lg-12 col-md-12 col-sm-6 col-12">
-                <label class="control-label" for="company_name">Company Name</label>
-                <input type="text" name="company_name" class="form-control" t-att-value="'company_name' in website_sale_order.partner_id and website_sale_order.partner_id['company_name']"/>
-            </div>
-            <div t-attf-class="form-group vat col-lg-12 col-md-12 col-sm-6 col-12">
-                <label class="control-label" for="vat">VAT</label>
-                <input type="text" name="vat"  id="vat" class="form-control" t-att-value="'vat' in website_sale_order.partner_id and website_sale_order.partner_id['vat']"/>
-            </div>
             <div t-attf-class="form-group street col-lg-12 col-md-12 col-sm-12 col-12">
-                <label class="control-label" for="street"><span class="text-secondary">*</span> Street</label>
+                <label class="control-label" for="street"><span class="text-secondary">*</span> Address</label>
                 <input type="text" name="street" class="form-control" required="1" t-att-value="'street' in website_sale_order.partner_id and website_sale_order.partner_id['street']"/>
             </div>
             <div t-attf-class="form-group zip col-lg-12 col-md-12 col-sm-6 col-12">
-                <label class="control-label" for="zip"><span class="text-secondary">*</span> Zip Code <small>required for shipping</small></label>
+                <label class="control-label" for="zip"><span class="text-secondary">*</span> Commune</label>
                 <input type="text" name="zip" class="form-control" required="1" t-att-value="'zip' in website_sale_order.partner_id and website_sale_order.partner_id['zip']"/>
             </div>
             <div t-attf-class="form-group country">
-              <label class="control-label" for="country_id"><span class="text-secondary">*</span> Country</label>
+              <label class="control-label" for="country_id"><span class="text-secondary">*</span> Pays</label>
               <select name="country_id" class="form-control" required="1">
                   <t t-foreach="countries" t-as="c">
                       <option t-att-value="c.id" t-att-selected="c.id == (website_sale_order.partner_id.country_id and website_sale_order.partner_id.country_id.id or -1)" t-att-data-country-code="c.code"><t t-esc="c.name"/></option>
@@ -200,11 +192,11 @@
                 </select>
             </div>
             <div t-attf-class="form-group city col-lg-12 col-md-12 col-sm-6 col-12">
-                <label class="control-label" for="city"><span class="text-secondary">*</span> City</label>
+                <label class="control-label" for="city"><span class="text-secondary">*</span> Ville</label>
                 <input type="text" name="city" class="form-control" required="1" t-att-value="'city' in website_sale_order.partner_id and website_sale_order.partner_id['city']"/>
             </div>
             <div t-attf-class="form-group col-lg-12 col-md-12 col-sm-6 col-12" id="phone">
-                <label class="control-label" for="phone"><span class="text-secondary">*</span> Phone or mobile</label>
+                <label class="control-label" for="phone"><span class="text-secondary">*</span> Telephone/Whatsapp</label>
                 <input type="tel" name="phone" class="form-control" required="1" t-att-value="'phone' in website_sale_order.partner_id and website_sale_order.partner_id['phone']"/>
             </div>
             <div class="clearfix" />
@@ -241,16 +233,16 @@
         <t t-set="countries" t-value="env['res.country'].sudo().search([])"/>
         <form name="/shop/checkout" id="shippingAddressForm" method="post" class="checkout_autoformat">
             <div t-attf-class="form-group name col-lg-12 col-md-12 col-sm-12 col-12">
-                <label class="control-label" for="name"><span class="text-secondary">*</span> Complete name</label>
+                <label class="control-label" for="name"><span class="text-secondary">*</span> Nom Complet</label>
                 <input type="text" t-att-value="contact and contact.name" name="name" class="form-control" required="1"/>
             </div>
             <div t-attf-class="form-group street col-lg-12 col-md-12 col-sm-12 col-12">
-                <label class="control-label" for="street"><span class="text-secondary">*</span> Street</label>
+                <label class="control-label" for="street"><span class="text-secondary">*</span> Address</label>
                 <input type="text" t-att-value="contact and contact.street" name="street" class="form-control" required="1"/>
             </div>
             <div t-attf-class="form-group zip col-lg-12 col-md-12 col-sm-6 col-12">
-                <label class="control-label" for="zip"><span class="text-secondary">*</span> Zip Code</label>
-                <input type="text" t-att-value="contact and contact.zip" name="zip" class="form-control" required="1" />
+                <label class="control-label" for="zip">Commune</label>
+                <input type="text" t-att-value="contact and contact.zip" name="zip" class="form-control" required="0" />
             </div>
             <div t-attf-class="form-group country col-lg-12 col-md-12 col-sm-6 col-12">
               <label class="control-label" for="country_id"><span class="text-secondary">*</span> Country</label>
@@ -272,11 +264,11 @@
                 </select>
             </div>
             <div t-attf-class="form-group city col-lg-12 col-md-12 col-sm-6 col-12">
-                <label class="control-label" for="city"><span class="text-secondary">*</span> City</label>
+                <label class="control-label" for="city"><span class="text-secondary">*</span> Ville</label>
                 <input type="text" t-att-value="contact and contact.city" name="city" class="form-control" required="1" />
             </div>
             <div t-attf-class="form-group col-lg-12 col-md-12 col-sm-6 col-12" id="phone">
-                <label class="control-label" for="phone"><span class="text-secondary">*</span> Phone or mobile</label>
+                <label class="control-label" for="phone"><span class="text-secondary">*</span> Telephone/Whatsapp</label>
                 <input type="tel" t-att-value="contact and contact.phone" name="phone" class="form-control" required="1"/>
             </div>
             <div class="clearfix"/>
@@ -390,7 +382,7 @@
         <xpath expr="//ul" position="after">
             <div>
                 <label class="text-normal mb0"><small>Do you wish to add indications to your order?</small></label>
-                <textarea class="form-control text-normal js_instructions" rows="6" placeholder="Ie. White house with white doors"><t t-esc="order.note"/></textarea>
+                <textarea class="form-control text-normal js_instructions" rows="6" placeholder="Ex. votrenom@mclicence.com"><t t-esc="order.note"/></textarea>
             </div>
         </xpath>
         <xpath expr="//input" position="attributes">
