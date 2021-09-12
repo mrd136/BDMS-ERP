@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record id="product_attr_value_view_form" model="ir.ui.view">
+            <field name="name">product.attr.form.inherit</field>
+            <field name="model">product.attribute</field>
+            <field name="inherit_id" ref="product.product_attribute_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='display_type']" position="after">
+                    <field name="unavailable_value_view_type" widget="radio" options="{'horizontal': True}"
+                           attrs="{'invisible': [('display_type', '!=', 'button')]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
